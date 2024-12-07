@@ -63,27 +63,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
     setTerminalInView(false);
 }, [tab]);
-    // Cleanup on tab change
-
-    /*useEffect(() => {
-        if (window.Jupiter._instance) {
-            window.Jupiter._instance = null;
-        }
-
-        setTerminalInView(false);
-    }, [tab]);
-    */
-
+    
     const rpcUrl = useMemo(() => JUPITER_DEFAULT_RPC, []);
 
-    /*
-    const { watch, reset, setValue, formState } = useForm<IFormConfigurator>({
-        defaultValues: INITIAL_FORM_CONFIG,
-    });
-
-    const watchAllFields = watch();
-    */
-    // Add static configuration instead
+       // Add static configuration instead
     const watchAllFields = {
         simulateWalletPassthrough: true,
         refetchIntervalForTokenAccounts: 10000,
