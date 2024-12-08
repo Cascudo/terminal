@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import TelegramIcon from 'src/icons/TelegramIcon';
 import XIcon from 'src/icons/XIcon';
 
