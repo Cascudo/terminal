@@ -28,23 +28,23 @@ const SwapTerminal: React.FC<SwapTerminalProps> = ({
   return (
     <div className="">
       {showLogo && (
-        <div className="flex flex-col items-center h-full w-full mt-4 md:mt-8">
-          <div className="flex flex-col justify-center items-center text-center">
-            <div className="flex space-x-2">
-              <SwapfyIcon width="52" height="52" />
-              <V2SexyChameleonText className="text-4xl md:text-[36px] font-semibold px-4 pb-2 md:px-0">
-                SWAPFY
-              </V2SexyChameleonText>
-              <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start">
-                v1
-              </div>
-            </div>
-            <p className="text-[#9D9DA6] max-w-[100%] md:max-w-[80%] text-md mt-2 mb-2 md:mb-2 heading-[24px]">
-              Lightning fast trades across multiple liquidity pools.
-            </p>
-          </div>
+  <div className="hidden md:flex flex-col items-center h-full w-full mt-8">
+    <div className="flex flex-col justify-center items-center text-center">
+      <div className="flex space-x-2">
+        <SwapfyIcon width="52" height="52" />
+        <V2SexyChameleonText className="text-[36px] font-semibold px-0">
+          SWAPFY
+        </V2SexyChameleonText>
+        <div className="px-1 py-0.5 bg-v3-primary rounded-md ml-2.5 font-semibold flex text-xs self-start">
+          v1
         </div>
-      )}
+      </div>
+      <p className="text-[#9D9DA6] max-w-[80%] text-md mt-2 mb-2 heading-[24px]">
+        Lightning fast trades across multiple liquidity pools.
+      </p>
+    </div>
+  </div>
+)}
       <div className="flex justify-center flex-grow">
         <div className="max-w-[480px] bg-black/05 rounded-xl flex flex-col md:flex-row w-full md:p-4 relative">
           <ShouldWrapWalletProvider>
