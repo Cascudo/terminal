@@ -40,7 +40,7 @@ const SwapTerminal: React.FC<SwapTerminalProps> = ({
               </div>
             </div>
             <p className="text-[#9D9DA6] max-w-[100%] md:max-w-[80%] text-md mt-2 mb-2 md:mb-2 heading-[24px]">
-              Powered by Chads & Degens.
+              Lightnig fast trades across multiple liquidity pools.
             </p>
           </div>
         </div>
